@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Profiles, Counter } from '../components'
+---
+
+<Layout title="Testing the Astro Framework">
+    <main class='h-screen flex flex-col items-center justify-center gap-y-6'>
+      <Profiles />
+      <Counter client:only="svelte" />
+    </main>
+</Layout>
